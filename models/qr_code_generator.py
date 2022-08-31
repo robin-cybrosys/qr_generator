@@ -24,7 +24,7 @@ class QrCodeGenerator(models.Model):
             img.save(result, format='PNG')
             result.seek(0)
             img_bytes = result.read()
-            base64_encoded_result_bytes = base64.b64encode(img_bytes)
-            base64_encoded_result_str = base64_encoded_result_bytes.decode(
+            encoded_result_bytes = base64.b64encode(img_bytes)
+            encoded_result_str = encoded_result_bytes.decode(
                 'ascii')
-            return base64_encoded_result_str
+            return encoded_result_str

@@ -25,8 +25,5 @@
 
     'data': [
         'security/ir.model.access.csv',
-        # 'views/qr_generator.xml',
-        # 'views/temp.xml',
-
     ],
 }
