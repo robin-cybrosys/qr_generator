@@ -32,8 +32,8 @@ odoo.define('qr_generator.qr_systray', function (require) {
                 args: [data]
                 }).then(function(result){
                 console.log(result)
-                    document.getElementById("ItemPreview").src = "data:image/png;base64," + result;
-                    document.getElementById("b_download").href = "data:image/png;base64," + result;
+                    $('#ItemPreview').attr("src","data:image/png;base64," + result);
+                    $('#b_download').attr("href","data:image/png;base64," + result);
                     $('#ItemPreview').show();
                     $('#BtnDownload').show();
                 });
